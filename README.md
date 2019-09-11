@@ -27,7 +27,7 @@
 
 # Algoritmos vistos:
 
-## _____________k-nn: Classificação nearest neighbor
+## k-nn: Classificação nearest neighbor
 No treinamento, classifica conforme distância entre grupos, plotando em um plano kD os dados conforme a sua tabela, inferindo sobre as saídas específicas. Cada dado deve ser atribuido um grupo, que será resultado do experimento ao final.
 
 Um indivíduo novo que entra é analisado através da expressão de distância:
@@ -49,7 +49,7 @@ Abaixo pode ser visualizado um código com um exemplo sobre classificação e pr
 [Exemplo de código comentado: k-nn](exercicio1.r)
 
 
-## ___________________________Regressão Linear
+## Regressão Linear
 
 Modelam relações complexas entre dados, estimando o impacto das variáveis no resultado de saída e extrapolando essa relação para resultados futuros generalizando para uma expressão matemática que descreve o comportamento da grandeza à ser predizida pelas n variáveis que a compõe.
 
@@ -75,3 +75,24 @@ Abaixo pode ser vizualizado um exemplo de predissão de despesas médicas utiliz
 
 
 [Exemplo de código comentado: Regressão Linear: Preço do vinho](exercicio3.r)
+
+## Clustering utilizando k-means
+
+Divide automaticamente o conjunto de dados em grupos de itens similares. Cria clusters de agrupamentos de acordo com as características de cada dado. Se baseia na semelhança de elementos próximos e distinção entre elementos não próximos. 
+Algumas aplicações:
+
+- Segmentação de clientes em grupos demográficos.
+- Detecção de anomalias quando um comportamento novo não se enxaixa nos clusters conhecidos.
+- Segmentação de grupos com diversas características diferentes, agrupando estas características e facilitando a análise dos dados.
+
+Faz-se o algoritmo determinado dois pontos aleatórios (centróides) no espaço das características e determinando a distância entre cada dado (um ponto no espaço) com esses dois pontos aleatório. Depois, se calcula uma média da posição dos grupos e reposiciona a centróide. Depois, faz-se novamente a distância e refaz os passos, e isso se repete até que não acha mudança quando se refaz o cálculo da distância e da média para posição da centróide.
+
+O exemplo à seguir trata de amostrars retiradas de 30 mil estudantes em uma rede social. Filtrando os dados, foram escolhidas 5 categorias: Atividades extracurriculares, modas, religião, romance e comportamento antissocial. 36 palavras foram escolhidas para representar estas categorias. O objetivo é separar cada indivíduo em grupos e classificar.
+
+[Exemplo de código comentado](exemplo4.r)
+
+Resultado extraído do exemplo:
+
+![Exemplo4](kmn.png)
+
+Pode ser visto a separação dos grupos por cada característica e o quanto essas característica influencia este grupo (1-5) por quão grande o valor é.
