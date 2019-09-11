@@ -48,6 +48,10 @@ Abaixo pode ser visualizado um código com um exemplo sobre classificação e pr
 
 [Exemplo de código comentado: k-nn](exercicio1.r)
 
+Resultado final do exemplo, mostrando uma cross-table. Percebe-se poucos (3 falsos positivos para câncer malígno) valores de erro nas sessões "MalignantXBenign" e "BenignXMalignant". 
+
+![Exemplo4](cancer.png)
+
 
 ## Regressão Linear
 
@@ -76,6 +80,10 @@ Abaixo pode ser vizualizado um exemplo de predissão de despesas médicas utiliz
 
 [Exemplo de código comentado: Regressão Linear: Preço do vinho](exercicio3.r)
 
+Resultado final do experimento da relação do preço do vinho com os dados. Pode ser visto os coeficientes de cada elemento. Maiores coeficientes significam maior influência.
+
+![Exemplo3](wine.png)
+
 ## Clustering utilizando k-means
 
 Divide automaticamente o conjunto de dados em grupos de itens similares. Cria clusters de agrupamentos de acordo com as características de cada dado. Se baseia na semelhança de elementos próximos e distinção entre elementos não próximos. 
@@ -89,10 +97,11 @@ Faz-se o algoritmo determinado dois pontos aleatórios (centróides) no espaço 
 
 O exemplo à seguir trata de amostrars retiradas de 30 mil estudantes em uma rede social. Filtrando os dados, foram escolhidas 5 categorias: Atividades extracurriculares, modas, religião, romance e comportamento antissocial. 36 palavras foram escolhidas para representar estas categorias. O objetivo é separar cada indivíduo em grupos e classificar.
 
-[Exemplo de código comentado](exemplo4.r)
+[Exemplo de código comentado: kmn para alunos de highschool](exemplo4.r)
 
 Resultado extraído do exemplo:
 
 ![Exemplo4](kmn.png)
 
 Pode ser visto a separação dos grupos por cada característica e o quanto essas característica influencia este grupo (1-5) por quão grande o valor é.
+
