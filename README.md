@@ -4,9 +4,12 @@
 
 - Livro: Brett Lantz. Machine Learning with R. Segunda edição.
 
+- Todos os códigos neste repositório foram criados utilizando o software R Studio.
+
 # Verificar:
 
 - Cursera: Introdução Machine Learning - Andrew Ng
+- Fazer regressão linear com o arquivo wine.csv
 
 # Funcionamento:
 
@@ -24,7 +27,7 @@
 
 # Algoritmos vistos:
 
-## k-nn: Classificação nearest neighbor
+## _____________k-nn: Classificação nearest neighbor
 No treinamento, classifica conforme distância entre grupos, plotando em um plano kD os dados conforme a sua tabela, inferindo sobre as saídas específicas. Cada dado deve ser atribuido um grupo, que será resultado do experimento ao final.
 
 Um indivíduo novo que entra é analisado através da expressão de distância:
@@ -41,7 +44,34 @@ A normalização dos dados pode ser feita por:
 
     Xn' = (Xn - min(X)/(max(X) - min(X))))
 
-[Exemplo de código comentado](exercicio1.r)
+Abaixo pode ser visualizado um código com um exemplo sobre classificação e predição da característica malígna de câncer utilizando o algorítmo. Dados extraídos de https://archive.ics.uci.edu.
+
+[Exemplo de código comentado: k-nn](exercicio1.r)
+
+
+## ___________________________Regressão Linear
+
+Modelam relações complexas entre dados, estimando o impacto das variáveis no resultado de saída e extrapolando essa relação para resultados futuros generalizando para uma expressão matemática que descreve o comportamento da grandeza à ser predizida pelas n variáveis que a compõe.
+
+Aqui serão estudadas regressões lineares, que utilizam uma reta como expressão algébrica que traduz o comportamento do experimento. Outros tipos de regressões também existem e utilizam de outras expressões matemáticas.
+
+A regressão linear é um caso das regressões polinomiais, que traduzem um conjunto de dados em uma expressão do tipo:
+
+    yb(x) = b0 + b1*x + b2*x^2 + ... + bn*x^n
+
+Criando um polinomio de ordem n e encontrando os coeficientes bi que adequam a função à posição dos dados.
+
+Na regressão linear este polinômio tem ordem = 1 de m variáveis e pode ser compreendido como uma aplicação do método dos mínimos quadrados.
+
+Em termos gerais, pode ser compreendido por:
+
+    y = a + b1*x1 + b2*x2 + ... + bm*xm + e0
+
+Onde 'a' é a variável independente, 'bi' são os m coeficientes da expressão e 'e0' o resíduo do erro que a expressão gera, que deve ser mínimo.
+
+Abaixo pode ser vizualizado um exemplo de predissão de despesas médicas utilizando o algorítimo. Dados criados pelo escritor do livro base do curso com base em dados demográficos dos EUA.
+
+[Exemplo de código comentado: Regressão linear](exercicio2.r)
 
 
 

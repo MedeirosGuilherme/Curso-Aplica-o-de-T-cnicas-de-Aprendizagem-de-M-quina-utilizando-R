@@ -1,3 +1,6 @@
+# Para o funcionamento do código devem estar instaladas as bibliotecas class e gmodels
+
+
 # importando o arquivo csv
 
 wbcd <- read.csv("wisc_bc_data.csv", stringsAsFactors = FALSE)
@@ -53,7 +56,12 @@ library(class)
 wbcd_test_pred <- knn(train = wbcd_train, test = wbcd_test,
                       cl = wbcd_train_labels, k = 21)
 
+# Ativa-se a classe gmodels e roda a crosstable para verificar
+
 library(gmodels)
+
+#wbcd_test_labels = labels do dado
+#wbcd_test_pred = predição do algoritmo
 
 CrossTable(x = wbcd_test_labels, y = wbcd_test_pred, prop.chisq = FALSE)
 
