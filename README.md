@@ -71,7 +71,7 @@ Onde 'a' é a variável independente, 'bi' são os m coeficientes da expressão 
 
 Abaixo pode ser vizualizado um exemplo de predissão de despesas médicas utilizando o algorítimo. Dados criados pelo escritor do livro base do curso com base em dados demográficos dos EUA.
 
-[Exemplo de código comentado: Regressão linear](exercicio2.r)
+[Exemplo de código comentado: Regressão linear: Gasto em saúde anual](exercicio2.r)
 
 
-
+[Exemplo de código comentado: Regressão Linear: Preço do vinho](exercicio3.r)
