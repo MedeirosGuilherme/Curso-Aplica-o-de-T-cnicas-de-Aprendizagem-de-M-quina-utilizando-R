@@ -28,6 +28,9 @@
 # Algoritmos vistos:
 
 ## k-nn: Classificação nearest neighbor
+
+[Apostila - K-nn](knn.pdf)
+
 No treinamento, classifica conforme distância entre grupos, plotando em um plano kD os dados conforme a sua tabela, inferindo sobre as saídas específicas. Cada dado deve ser atribuido um grupo, que será resultado do experimento ao final.
 
 Um indivíduo novo que entra é analisado através da expressão de distância:
@@ -54,6 +57,8 @@ Resultado final do exemplo, mostrando uma cross-table. Percebe-se poucos (3 fals
 
 
 ## Regressão Linear
+
+[Apostila - Regressão Linear](Regressão-Linear.pdf)
 
 Modelam relações complexas entre dados, estimando o impacto das variáveis no resultado de saída e extrapolando essa relação para resultados futuros generalizando para uma expressão matemática que descreve o comportamento da grandeza à ser predizida pelas n variáveis que a compõe.
 
@@ -86,6 +91,8 @@ Resultado final do experimento da relação do preço do vinho com os dados. Pod
 
 ## Clustering utilizando k-means
 
+[Apostila - Método Clusters-k-means](clusters-kmeans.pdf)
+
 Divide automaticamente o conjunto de dados em grupos de itens similares. Cria clusters de agrupamentos de acordo com as características de cada dado. Se baseia na semelhança de elementos próximos e distinção entre elementos não próximos. 
 Algumas aplicações:
 
@@ -97,7 +104,7 @@ Faz-se o algoritmo determinado dois pontos aleatórios (centróides) no espaço 
 
 O exemplo à seguir trata de amostrars retiradas de 30 mil estudantes em uma rede social. Filtrando os dados, foram escolhidas 5 categorias: Atividades extracurriculares, modas, religião, romance e comportamento antissocial. 36 palavras foram escolhidas para representar estas categorias. O objetivo é separar cada indivíduo em grupos e classificar.
 
-[Exemplo de código comentado: kmn para alunos de highschool](exemplo4.r)
+[Exemplo de código comentado: kmn para alunos de highschool](exercicio4.r)
 
 Resultado extraído do exemplo:
 
@@ -105,3 +112,12 @@ Resultado extraído do exemplo:
 
 Pode ser visto a separação dos grupos por cada característica e o quanto essas característica influencia este grupo (1-5) por quão grande o valor é.
 
+## Outros métodos
+
+Outros métodos podem ser vistos nas apostilas .pdf seguidos dos seus exemplos:
+
+[Método de Naive Bayes - Apostila](NaiveBayes.pdf)
+
+[Método de Naive Bayes - Exemplo](Naive.r)
+
+[Redes Neurais e SVM - Apostila](SVM-NeuralNETS.pdf)
